@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Erutd Surf</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .playfair {
+      font-family: 'Playfair Display', serif;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #37d47b 0%, #e8c766 50%, #D4AF37 100%);
+    }
+    .wave-shape {
+      height: 150px;
+      overflow: hidden;
+    }
+    .wave-shape svg {
+      height: 100%;
+      width: 100%;
+    }
+    .wave-shape .shape-fill {
+      fill: #ffffff;
+    }
+    .food-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 25px -5px rgba(222, 135, 12, 0.145), 0 10px 10px -5px rgba(0, 0, 0, 0.13);
+    }
+    .villa-image {
+      transition: transform 0.5s ease;
+    }
+    .villa-image:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <span class="playfair text-2xl font-bold text-blue-900">MENTAWAI SURF</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="#home" class="px-3 py-2 text-sm font-medium text-blue-900 hover:text-yellow-600">Home</a>
+            <a href="#about" class="px-3 py-2 text-sm font-medium text-blue-900 hover:text-yellow-600">The Island</a>
+            <a href="#villas" class="px-3 py-2 text-sm font-medium text-blue-900 hover:text-yellow-600">Villas</a>
+            <a href="#surf" class="px-3 py-2 text-sm font-medium text-blue-900 hover:text-yellow-600">Surf Spots</a>
+            <a href="#dining" class="px-3 py-2 text-sm font-medium text-blue-900 hover:text-yellow-600">Dining</a>
+            <a href="#gallery" class="px-3 py-2 text-sm font-medium text-blue-900 hover:text-yellow-600">Gallery</a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <a href="#contact" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white gold-gradient hover:bg-yellow-600">PESAN SEKARANG</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative pt-16">
+    <div class="relative h-screen">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/64fa6971-606f-4b63-ae8a-cbad1e912485.png" alt="Aerial view of Azure Sands luxury island resort with turquoise waters, white sand beaches, and luxurious villas nestled in tropical greenery" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+        <h1 class="playfair text-5xl md:text-7xl font-bold text-white mb-6">MENTAWAI SURF</h1>
+        <p class="text-xl md:text-2xl text-white max-w-2xl mb-12">Sebuah pulau surga pribadi dimana kemewahan bertemu dengan ombak yang sempurna</p>
+        <a href="#about" class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium hover:bg-white hover:text-blue-900 transition duration-300">EXPLORE</a>
+      </div>
+    </div>
+    <div class="wave-shape">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-600 uppercase tracking-widest text-sm">Paradise Found</span>
+        <h2 class="playfair text-4xl font-bold text-blue-900 mt-2">Pengalaman Pulau Mentawai</h2>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img src="logo/PETAMTW.jpg" alt="Luxury beachfront villa at dusk with infinity pool overlooking the ocean, warm lighting, and modern tropical architecture" class="rounded-lg shadow-xl" />
+        </div>
+        <div class="md:w-1/2">
+          <p class="text-lg mb-6">Kepulauan Mentawai adalah kabupaten di Provinsi Sumatera Barat yang terletak di Samudra Hindia, sekitar 150 km lepas pantai barat Sumatera. Secara geografis, kepulauan ini terdiri dari empat pulau besar: Siberut, Sipora, Pagai Utara, dan Pagai Selatan, serta banyak pulau-pulau kecil lainnya.</p>
+          <p class="text-lg mb-6">Kepulauan Mentawai dikenal dengan keindahan alamnya yang masih alami, seperti pantai berpasir putih, terumbu karang, dan hutan tropis. Selain itu, kepulauan ini juga dihuni oleh Suku Mentawai yang memiliki budaya dan tradisi unik. </p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div>
+              <h4 class="font-bold text-yellow-600 mb-2">Lokasi:</h4>
+              <p>Kepulauan Mentawai terletak di Samudra Hindia, di lepas pantai barat Sumatera, dan merupakan bagian dari Provinsi Sumatera Barat. </p>
+            </div>
+            <div>
+              <h4 class="font-bold text-yellow-600 mb-2">Pulau-pulau Utama:</h4>
+              <p>Siberut_Sipora_Pagai Utara_Pagai Selatan</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-yellow-600 mb-2">Karakteristik Alam:</h4>
+              <p>Pantai, Laut, dan Hutan: memiliki pantai-pantai indah dengan pasir putih dan perairan yang kaya akan keindahan Ombak dan Alamnya</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-yellow-600 mb-2">Budaya:</h4>
+              <p>Suku Mentawai: Masyarakat adat Mentawai memiliki budaya dan tradisi yang unik, termasuk seni merajah tubuh (tato) dan berbagai ritual serta upacara adat. </p>
+            </div>
+          </div>
+          <button class="px-6 py-2 border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white transition duration-300">PENCARIAN LEBIH LANJUT</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Villas Section -->
+  <section id="villas" class="py-20 bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-300 uppercase tracking-widest text-sm">Luxury Living</span>
+        <h2 class="playfair text-4xl font-bold mt-2">Villa Khas Kami</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Villa 1 -->
+        <div class="bg-white bg-opacity-10 rounded-lg overflow-hidden">
+          <div class="villa-image overflow-hidden">
+            <img src="pulau_macaronis/image1.jpg" alt="Ocean Cliff Villa exterior with infinity pool and glass walls overlooking dramatic sea cliffs at sunset" class="w-full h-64 object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Macaronis Surf Resort</h3>
+            <p class="mb-4">Silabu, Kec. Pagai Utara, Kabupaten Kepulauan Mentawai, Sumatera Barat 25391</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Macaronis Resort memiliki luas 354 meter persegi
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+               Pulau dengan keindahan alam yang sangat tinggi 
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Layanan pelayanan 17/7
+              </li>
+            </ul>
+            <a href="#" class="inline-block px-4 py-2 bg-yellow-600 hover:bg-yellow-700 transition duration-300">LIHAT DETAIL</a>
+          </div>
+        </div>
+
+        <!-- Villa 2 -->
+        <div class="bg-white bg-opacity-10 rounded-lg overflow-hidden">
+          <div class="villa-image overflow-hidden">
+            <img src="pulau_kandui/image1.jpg" alt="Beachfront Canopy Villa with direct beach access, thatched roof, and open-air living space with panoramic views" class="w-full h-64 object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Kandui Resort</h3>
+            <p class="mb-4">Katurei, Kec. Siberut, Kepulauan Mentawai, Sumatera Barat 25393</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Kandui Resort memiliki luas 26 hektar 
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Mempunyai kolam renang yang luas ditengah vila
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Termasuk industri selancar yang dipersonali sasi dengan layanan pelayan 19/5
+              </li>
+            </ul>
+            <a href="#" class="inline-block px-4 py-2 bg-yellow-600 hover:bg-yellow-700 transition duration-300">LIHAT DETAIL</a>
+          </div>
+        </div>
+
+        <!-- Villa 3 -->
+        <div class="bg-white bg-opacity-10 rounded-lg overflow-hidden">
+          <div class="villa-image overflow-hidden">
+            <img src="pulau_balcony/image1.jpg" alt="Treetop Paradise Villa nestled in jungle canopy with glass-bottom pool and expansive balcony looking out to sea" class="w-full h-64 object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Balcony Resort</h3>
+            <p class="mb-4">Pasakiat Taileleu, Kec. Seberut Bar. Daya, Kabupaten Kepulauan Mentawai, Sumatera Barat 25393</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                pulau ini memiliki luas 48.000 meter persegi
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Resor yang telah ada dibangun pada 2019
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Layanan pelayan 10/5
+              </li>
+            </ul>
+            <a href="#" class="inline-block px-4 py-2 bg-yellow-600 hover:bg-yellow-700 transition duration-300">LIHAT DETAIL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="villas" class="py-20 bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-300 uppercase tracking-widest text-sm"></span>
+        <h2 class="playfair text-4xl font-bold mt-2">Keindahan Ombak</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Villa 1 -->
+        <div class="bg-white bg-opacity-10 rounded-lg overflow-hidden">
+          <div class="villa-image overflow-hidden">
+            <img src="pulau_macaronis/image2.jpg" alt="Ocean Cliff Villa exterior with infinity pool and glass walls overlooking dramatic sea cliffs at sunset" class="w-full h-64 object-cover" />
+          </div>
+          <div class="p-6">
+             <h3 class="playfair text-2xl font-bold mb-2">Ombak Macaronis</h3>
+            <p class="mb-4">Ombak Macaronis di Mentawai adalah ombak kiri yang terkenal dan menjadi salah satu spot surfing terbaik di dunia, terletak di Teluk Pasongan, dekat Macaronis Resort.</p>
+            <ul class="space-y-2 mb-6">
+              
+            </ul>
+            <a href="#" class="inline-block px-4 py-2 bg-yellow-600 hover:bg-yellow-700 transition duration-300">OMBAK LAINYA</a>
+          </div>
+        </div>
+
+        <!-- Villa 2 -->
+        <div class="bg-white bg-opacity-10 rounded-lg overflow-hidden">
+          <div class="villa-image overflow-hidden">
+            <img src="pulau_kandui/image2.jpg" alt="Beachfront Canopy Villa with direct beach access, thatched roof, and open-air living space with panoramic views" class="w-full h-64 object-cover" />
+          </div>
+          <div class="p-6">
+             <h3 class="playfair text-2xl font-bold mb-2">Ombak Kandui</h3>
+            <p class="mb-4">Ombak Kandui, yang juga dikenal sebagai Kandui Left atau Nokandui, adalah salah satu ombak paling terkenal dan menantang di Kepulauan Mentawai, Indonesia, yang terkenal dengan ombak kiri yang panjang, cepat, berongga, dan berat.</p>
+            <ul class="space-y-2 mb-6">
+              
+            </ul>
+            <a href="#" class="inline-block px-4 py-2 bg-yellow-600 hover:bg-yellow-700 transition duration-300">OMBAK LAINYA</a>
+          </div>
+        </div>
+
+        <!-- Villa 3 -->
+        <div class="bg-white bg-opacity-10 rounded-lg overflow-hidden">
+          <div class="villa-image overflow-hidden">
+            <img src="pulau_balcony/image2.jpg" alt="Treetop Paradise Villa nestled in jungle canopy with glass-bottom pool and expansive balcony looking out to sea" class="w-full h-64 object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Ombak Balcony</h3>
+            <p class="mb-4">Ombak Balcony di Mentawai merujuk pada salah satu spot selancar yang terkenal di Kepulauan Mentawai, khususnya di sekitar Pulau Sipora. </p>
+            <ul class="space-y-2 mb-6">
+             
+            </ul>
+            <a href="#" class="inline-block px-4 py-2 bg-yellow-600 hover:bg-yellow-700 transition duration-300">OMBAK LAINYA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surf Spots Section -->
+  <section id="surf" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-600 uppercase tracking-widest text-sm">Perfect Waves</span>
+        <h2 class="playfair text-4xl font-bold text-blue-900 mt-2">Pemain surf Legendary yang pernah ada di Mentawai</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex flex-col">
+          <img src="pulau_macaronis/gabriel.jpg" />
+          <div class="bg-blue-900 text-white p-8 rounded-b-lg flex-grow">
+            <h3 class="playfair text-2xl font-bold mb-4">Gabriel Medina</h3>
+            <p class="mb-6">Peselancar Brazil ini juga sering terlihat di Macaronis dan dikenal dengan gaya selancarnya yang agresif dan kuat</p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div>
+                <h4 class="font-bold text-yellow-300">DIFFICULTY</h4>
+                <p>Advanced</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">LENGTH</h4>
+                <p>200-300m</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">BEST SEASON</h4>
+                <p>April - October</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">SWELL DIRECTION</h4>
+                <p>SW</p>
+              </div>
+            </div>
+            <a href="#" class="inline-block px-4 py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-blue-900 transition duration-300">LIHAT DETAIL</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-blue-50 p-8 rounded-lg h-full">
+            <h3 class="playfair text-3xl font-bold text-blue-900 mb-6">Surf Conditions</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg text-blue-900 mb-2">Today's Report</h4>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Swell Height</span>
+                  <span class="font-bold">4-6 ft</span>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Swell Period</span>
+                  <span class="font-bold">12 sec</span>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Wind</span>
+                  <span class="font-bold">Light Offshore</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Tide</span>
+                  <span class="font-bold">High: 7:42AM | 8:03PM</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg text-blue-900 mb-4">Surf Services</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Private surf guides (all levels)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Premium board rentals (shortboards, longboards, SUPs)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Daily photography/video service
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Surfboard storage and care
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="surf" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex flex-col">
+          <img src="pulau_kandui/kelly_slater.jpg" />
+          <div class="bg-blue-900 text-white p-8 rounded-b-lg flex-grow">
+            <h3 class="playfair text-2xl font-bold mb-4">Kelly Slater</h3>
+            <p class="mb-6">Meskipun tidak secara khusus disebutkan pernah berada di Kandui, Kelly Slater adalah peselancar profesional yang dikenal sering mengunjungi Mentawai dan berselancar di ombak-ombak terbaiknya. </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div>
+                <h4 class="font-bold text-yellow-300">DIFFICULTY</h4>
+                <p>Advanced</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">LENGTH</h4>
+                <p>200-300m</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">BEST SEASON</h4>
+                <p>April - October</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">SWELL DIRECTION</h4>
+                <p>SW</p>
+              </div>
+            </div>
+            <a href="#" class="inline-block px-4 py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-blue-900 transition duration-300">LEBIH DETAIL</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-blue-50 p-8 rounded-lg h-full">
+            <h3 class="playfair text-3xl font-bold text-blue-900 mb-6">Surf Conditions</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg text-blue-900 mb-2">Today's Report</h4>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Swell Height</span>
+                  <span class="font-bold">4-6 ft</span>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Swell Period</span>
+                  <span class="font-bold">12 sec</span>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Wind</span>
+                  <span class="font-bold">Light Offshore</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Tide</span>
+                  <span class="font-bold">High: 7:42AM | 8:03PM</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg text-blue-900 mb-4">Surf Services</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Private surf guides (all levels)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Premium board rentals (shortboards, longboards, SUPs)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Daily photography/video service
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Surfboard storage and care
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="surf" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex flex-col">
+          <img src="pulau_balcony/paul_walker.jpg" />
+          <div class="bg-blue-900 text-white p-8 rounded-b-lg flex-grow">
+            <h3 class="playfair text-2xl font-bold mb-4">Paul Walker</h3>
+            <p class="mb-6">Aktor yang dikenal dari film "Fast and Furious" ini juga ternyata adalah seorang penggemar surfing dan sering mengunjungi Mentawai.menurut laporan dari detikTravel. 
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div>
+                <h4 class="font-bold text-yellow-300">DIFFICULTY</h4>
+                <p>Advanced</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">LENGTH</h4>
+                <p>200-300m</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">BEST SEASON</h4>
+                <p>April - October</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-300">SWELL DIRECTION</h4>
+                <p>SW</p>
+              </div>
+            </div>
+            <a href="#" class="inline-block px-4 py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-blue-900 transition duration-300">LEBIH DETAIL</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-blue-50 p-8 rounded-lg h-full">
+            <h3 class="playfair text-3xl font-bold text-blue-900 mb-6">Surf Conditions</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg text-blue-900 mb-2">Today's Report</h4>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Swell Height</span>
+                  <span class="font-bold">4-6 ft</span>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Swell Period</span>
+                  <span class="font-bold">12 sec</span>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                  <span>Wind</span>
+                  <span class="font-bold">Light Offshore</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>Tide</span>
+                  <span class="font-bold">High: 7:42AM | 8:03PM</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg text-blue-900 mb-4">Surf Services</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Private surf guides (all levels)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Premium board rentals (shortboards, longboards, SUPs)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Daily photography/video service
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Surfboard storage and care
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Dining Section -->
+  <section id="dining" class="py-20 bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-300 uppercase tracking-widest text-sm">Culinary Excellence</span>
+        <h2 class="playfair text-4xl font-bold mt-2">Makan Di Pulau</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+          <h3 class="playfair text-xl font-bold mb-4">Klub karang</h3>
+          <p class="mb-4">Pengalaman bersantap mewah khas tepi laut kami, menyajikan makanan laut lokal paling segar dan bahan-bahan dari kebun organik kami</p>
+          <p class="text-sm">Makan malam 6:30PM - 10:30PM</p>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+          <h3 class="playfair text-xl font-bold mb-4">Bar pantai pasang surut</h3>
+          <p class="mb-4">Bersantap santai sambil menjejakkan kaki dipasir dengan menu BBQ spesial harian, jus segar, dan koktail matahari terbenam yang terkenal.</p>
+          <p class="text-sm">Makan siang 11AM - 5PM | Bar sampai tengan malam</p>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+          <h3 class="playfair text-xl font-bold mb-4">Vila Makanan</h3>
+          <p class="mb-4">Layanan koki pribadi tersedia untuk bersantap di vila dengan menu yang sepenuhnya disesuaikan deangan preferensi anda.</p>
+          <p class="text-sm">Diperlukan pemberitahuan 24 jam sebelumnya</p>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+          <h3 class="playfair text-xl font-bold mb-4">Kafe Matahari Terbit</h3>
+          <p class="mb-4">Kopi dan kue kering dipagi hari disertai pemandangan yang menabjukan, cocok untuk para peselanjar yang mulai beraktivitas di pagi hari.</p>
+          <p class="text-sm">Setiap hari 5:30AM - 10AM</p>
+        </div>
+      </div>
+
+      <h3 class="playfair text-2xl font-bold mb-8 text-center">Hidangan dan Minuman</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Food 1 -->
+        <div class="food-card bg-white bg-opacity-5 rounded-lg p-6 transition duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/308640e9-66c3-4935-8db5-6e823cdc98fe.png" alt="Seared yellowfin tuna with sesame crust, seaweed salad, wasabi foam and citrus ponzu sauce" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h4 class="playfair text-xl font-bold">Yellowfin Tataki</h4>
+          <p class="text-yellow-300 mb-3">Reef Club Starter</p>
+          <p>Tuna sirip kuning tangkapan lokal dengan kulit wijen, salad rumput laut, busa wasabi, dan ponzu jeruk.</p>
+        </div>
+
+        <!-- Food 2 -->
+        <div class="food-card bg-white bg-opacity-5 rounded-lg p-6 transition duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e121a6b-2480-419b-8099-a7e8fbb6b3b8.png" alt="Lobster thermidor with herb crust, truffle mashed potatoes, and grilled asparagus" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h4 class="playfair text-xl font-bold">Island Lobster Thermidor</h4>
+          <p class="text-yellow-300 mb-3">Reef Club Main</p>
+          <p>Lobster utuh dengan kulit rempah, tumbukan truffle, sayuran musiman, saus krim brendi. </p>
+        </div>
+
+        <!-- Food 3 -->
+        <div class="food-card bg-white bg-opacity-5 rounded-lg p-6 transition duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d04c7c9-89aa-4052-9a38-889ce9c9032d.png" alt="Tropical fruit platter with dragonfruit, mango, pineapple, passionfruit, and edible flowers" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h4 class="playfair text-xl font-bold">Sunrise Fruit Platter</h4>
+          <p class="text-yellow-300 mb-3">Sunrise Cafe</p>
+          <p>Buah-buahan tropis minuman dengan yogrurt kelapa buah sendiri dan madu dari peternakan lebah kami.</p>
+        </div>
+
+        <!-- Drink 1 -->
+        <div class="food-card bg-white bg-opacity-5 rounded-lg p-6 transition duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f86db19-15eb-4fbe-85d1-8aa105b35da2.png" alt="Azure Mule cocktail in copper mug with blue hue, mint garnish, and condensation on glass" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h4 class="playfair text-xl font-bold">Azure Mule</h4>
+          <p class="text-yellow-300 mb-3">Signature Cocktail</p>
+          <p>Rum rempah lokal, bir jahe, jeruk nipis, dan sirup sederhana yang mengandungb ganggang biru.</p>
+        </div>
+
+        <!-- Drink 2 -->
+        <div class="food-card bg-white bg-opacity-5 rounded-lg p-6 transition duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/49245ff6-2f25-4c84-93eb-8a513116e1e8.png" alt="Golden Sunset cocktail in coupe glass with orange slice and cinnamon stick garnish" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h4 class="playfair text-xl font-bold">Golden Sunset</h4>
+          <p class="text-yellow-300 mb-3">Sunset Special</p>
+          <p>Lobster utuh dengan kulit rempah tumpukan truffle, sayuran musiman krim brendi</p>
+        </div>
+
+        <!-- Drink 3 -->
+        <div class="food-card bg-white bg-opacity-5 rounded-lg p-6 transition duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/10bd1155-d34b-443a-b2ae-5bcaefb0ecb5.png" alt="Island Coffee featuring rich dark coffee with coconut foam, cinnamon, and vanilla bean" class="w-full h-48 object-cover rounded-md mb-4" />
+          <h4 class="playfair text-xl font-bold">Island Coffee</h4>
+          <p class="text-yellow-300 mb-3">Morning Elixir</p>
+          <p>Kopi panggang lokal dengan busa dingin kelapa, vanila dan sedikit kayu manis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-600 uppercase tracking-widest text-sm">Visual Escape</span>
+        <h2 class="playfair text-4xl font-bold text-blue-900 mt-2">Galeri Pulau</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="overflow-hidden rounded-lg">
+          <img src="galeri/image4.jpg" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a5a6282e-ce3e-48ca-8d11-1ba2a2a5e60a.png" alt="Infinity pool at night with underwater lighting, overlooking the moonlit ocean" class="w-full h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/38526930-f0e5-4698-95c8-264ebd0e1e32.png" alt="Surfer riding a perfect barrel wave at golden hour with spray and sun reflections" class="w-full h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a8dc3107-aa44-4e00-91b5-e56d21d8c7b3.png" alt="Luxury spa treatment room with ocean view, massage table, and tropical flowers" class="w-full h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2061f6d3-1e35-4a32-abf5-e4f503b3012b.png" alt="Chef preparing seafood dish at open-air kitchen with fresh ingredients and ocean view" class="w-full h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a52e538e-0097-479d-b16e-fffc4e5bb3b6.png" alt="Aerial view of Azure Sands island showing villas nestled in greenery and turquoise waters" class="w-full h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="galeri/image1.jpg" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="galeri/image2.jpg" />
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img src="galeri/image3.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="relative py-20 bg-blue-900 text-white">
+    <div class="wave-shape rotate-180">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-yellow-300 uppercase tracking-widest text-sm">Begin Your Journey</span>
+        <h2 class="playfair text-4xl font-bold mt-2">Reserve Your Stay</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-white bg-opacity-10 p-8 rounded-lg">
+          <h3 class="playfair text-2xl font-bold mb-6">Karya tulis Website</h3>
+          <h3 class="playfair text-2xl font-bold mb-6">Nama : Erutd M Thalif</h3>
+          <h3 class="playfair text-2xl font-bold mb-6">Studi : Devoloper</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-yellow-300 mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <div>
+                <h4 class="font-bold text-lg">Alamat</h4>
+                <p>Kepulauan Mentawai</p>
+                <p class="text-sm opacity-80">Kec, Siberut Utara-Srilogui</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-yellow-300 mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <div>
+                <h4 class="font-bold text-lg">Telepon</h4>
+                <p>0821********</p>
+                <p>erutd@azuresands.com</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-yellow-300 mt-1 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <h4 class="font-bold text-lg">Pelayaan</h4>
+                <p>Buka sepanjang Tahun</p>
+                <p>Pemesanan tersedia hingga 18 bulan sebelumnya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white bg-opacity-10 p-8 rounded-lg">
+          <h3 class="playfair text-2xl font-bold mb-6">Formulis Permintaan Peminat</h3>
+          <form>
+            <div class="grid grid-cols-1 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1">Nama lengkap</label>
+                <input type="text" id="name" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1">Alamat surel</label>
+                <input type="email" id="email" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent" />
+              </div>
+              <div>
+                <label for="dates" class="block text-sm font-medium mb-1">Tanggal pilihan</label>
+                <input type="text" id="dates" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent" placeholder="MM/DD/YYYY to MM/DD/YYYY" />
+              </div>
+              <div>
+                <label for="guests" class="block text-sm font-medium mb-1">Jumlah tamu</label>
+                <select id="guests" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3-4</option>
+                  <option>5-6</option>
+                  <option>7+</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1">Permintaan khusus</label>
+                <textarea id="message" rows="3" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="w-full gold-gradient text-blue-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-600 transition duration-300">KIRIMKAN PERMINTAAN</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-950 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="playfair text-xl font-bold mb-6">MENTAWAI SURF</h4>
+          <p class="mb-4">A private island sanctuary where world-class surf meets uncompromising luxury.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-yellow-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="playfair text-lg font-bold mb-6">Explore</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-yellow-300">The Island</a></li>
+            <li><a href="#villas" class="hover:text-yellow-300">Villas</a></li>
+            <li><a href="#surf" class="hover:text-yellow-300">Surf Spots</a></li>
+            <li><a href="#dining" class="hover:text-yellow-300">Dining</a></li>
+            <li><a href="#gallery" class="hover:text-yellow-300">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="playfair text-lg font-bold mb-6">Information</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-yellow-300">Travel Advisory</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Sustainability</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Press</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Careers</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="playfair text-lg font-bold mb-6">Newsletter</h4>
+          <p class="mb-4">Subscribe for exclusive offers and island updates</p>
+          <form class="flex">
+            <input type="email" placeholder="Your email" class="flex-grow bg-white bg-opacity-20 border border-white border-opacity-30 rounded-l-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent" />
+            <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white px-4 rounded-r-md">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center text-sm">
+        <p>© 2025 Azure Sands Private Island Resort. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Simple form validation
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        
+        if (!name || !email) {
+          e.preventDefault();
+          alert('Please fill in all required fields');
+          return false;
+        }
+        
+        // In a real implementation, you would send the form data to a server here
+        alert('Thank you for your enquiry! We will contact you shortly.');
+        form.reset();
+      });
+    }
+
+    // Image gallery hover effect
+    const galleryImages = document.querySelectorAll('#gallery img');
+    galleryImages.forEach(img => {
+      img.addEventListener('mouseenter', () => {
+        img.style.transform = 'scale(1.05)';
+      });
+      img.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
+
